@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    
+    <meta name="title" content="Custom OEM Seat Covers - Handcrafted in Houston, TX">
+    <meta name="description" content="High-quality, made-to-order seat covers crafted to OEM standards in our Houston facility. Free U.S. shipping, global delivery, and a satisfaction guarantee.">
+    <meta name="keywords" content="OEM seat covers, custom seat covers, handmade seat covers, Houston seat covers, car seat upholstery, truck seat covers, leather seat covers, replacement seat covers, auto interior, custom car seats, SUV seat covers, high quality seat covers, automotive upholstery, seat cover shop USA">
+    <meta name="author" content="Auto Nation Seat Factory">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+
+    <title>US Auto Nation|OEM Seat Covers</title>
+</head>
+<body>
+    <style>
+        @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+:root {
+  --light-brown: #D2B48C;
+  --medium-brown: #c19a6b;
+  --dark-brown: #5e3a21;
+  --orange-brown: #cf8455;
+  --dark-orange: #8B4513;
+  --very-dark-brown: #5d3019;
+  --brown-text: #66361e;
+  --light-brown-text: #7a4a2b;
+  --white: #fff;
+  --black: #000;
+  --gray: #555;
+  --light-gray: #eee;
+  --dark-gray: #333;
+  --medium-gray: #666;
+  --shadow-color: rgba(207, 132, 85, 0.3);
+  --primary-color: #54a0cf;
+  --secondary-color: #884b26;
+  --light-beige: #F5DEB3;
+}
+
+/* ================ */
+/* BASE STYLES */
+/* ================ */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: rgba(211, 187, 156, 0.1);
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  width: 85%;
+  margin: 0 auto;
+  border: 3px solid var(--light-brown);
+  background-color: var(--white);
+}
+
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+body a:visited {
+  color: inherit;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+}
+
+/* ================ */
+/* HEADER STYLES */
+/* ================ */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: auto;
+  background: var(--white);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  border-radius: 8px;
+  position: sticky;
+  flex-wrap: nowrap;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 1000;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.header__container.scrolled {
+  height: 6rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__flag {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 120px;
+}
+
+.header__flag--img {
+  width: 20rem;
+  height: 11rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.header__items {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__items a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header__items p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__items p:hover {
+  color: var(--orange-brown);
+  transform: scale(1.05);
+}
+
+.header__logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 120px;
+}
+
+.header__logo--img {
+  width: 14rem;
+  height: 7.5rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin-right: 3rem;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.8rem;
+  height: 2.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  z-index: 10;
+  padding: 0.5rem 0;
+  transform: translateY(-50%);
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 0.25rem;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(0.4rem, -0.3rem);
+  background: var(--orange-brown);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(0.4rem, 0.3rem);
+  background: var(--orange-brown);
+}
+
+.hamburger:hover span {
+  background: var(--orange-brown);
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  animation: fadeIn 0.3s both;
+}
+
+/* ================ */
+/* MEDIA QUERIES */
+/* ================ */
+@media (max-width: 900px) {
+  .header__container {
+    padding: 0 1.5rem;
+  }
+  
+  .header__flag--img {
+    width: 16rem;
+    height: 9rem;
+  }
+  
+  .header__logo--img {
+    width: 10rem;
+  }
+  
+  .header__items {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .header__container {
+    flex-wrap: wrap;
+    padding: 0 20px;
+    height: 8rem;
+    align-items: center;
+  }
+  
+  .header__flag {
+    display: none;
+  }
+  
+  .header__items {
+    display: none;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: var(--white);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: 5;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .header__items.active {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    animation: menuSlideIn 0.4s both;
+  }
+  
+  .header__logo {
+    order: -1;
+    flex: 0 0 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .header__logo--img {
+    width: 13rem;
+    margin: 0 auto;
+    height: 8rem;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .header__container.scrolled {
+    height: 6.3rem;
+    justify-content: flex-start;
+  }
+  
+  .header__container.scrolled .header__logo {
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  
+  .header__container.scrolled .header__logo--img {
+    width: 10.2rem;
+    margin: 0;
+    margin-right: auto;
+    transform: translateX(-1.5rem) scale(0.92) translateY(-4%);
+  }
+  
+  .header__container.scrolled .hamburger {
+    top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    padding: 10px 20px;
+  }
+  
+  .header__items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .seat-cover-cta {
+    max-width: 95%;
+  }
+}
+
+/* ================ */
+/* ANIMATIONS */
+/* ================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes menuSlideIn {
+  from { 
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.ebay-faq-section {
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ebay-faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.faq-main-title {
+  color: var(--secondary-color);
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq-intro {
+  color: var(--gray);
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.ebay-faq-accordion {
+  margin: 25px 0;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px 0;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--light-gray);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: var(--dark-orange);
+}
+
+.faq-question[aria-expanded=true] {
+  color: var(--dark-orange);
+}
+
+.accordion-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23000000" d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"/></svg>') no-repeat center;
+  transition: all 0.3s;
+}
+
+.faq-question:hover .accordion-icon,
+.faq-question[aria-expanded=true] .accordion-icon {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%238B4513" d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"/></svg>') no-repeat center;
+}
+
+.faq-question[aria-expanded=true] .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer[aria-expanded=true] {
+  max-height: 500px;
+}
+
+.answer-content {
+  padding: 15px 0 20px 15px;
+}
+
+.faq-answer p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  color: var(--dark-gray);
+  line-height: 1.5;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-main-title {
+    font-size: 24px;
+  }
+  .faq-intro {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .faq-question {
+    font-size: 1.5rem;
+    padding: 12px 0;
+  }
+  .answer-content {
+    padding: 12px 0 18px 12px;
+  }
+  .faq-answer p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .ebay-faq-container {
+    padding: 0 12px;
+  }
+  .faq-main-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .faq-intro {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .faq-question {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .answer-content {
+    padding: 10px 0 15px 10px;
+  }
+  .faq-answer p {
+    font-size: 130px;
+    line-height: 1.4;
+  }
+  .accordion-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+.footer__container {
+  height: 2rem;
+  background-color: var(--light-brown);
+  display: flex;
+  align-items: center;
+  color: var(--very-dark-brown);
+}
+
+.copyright {
+  font-size: larger;
+  margin: 0 auto;
+}
+
+.stats-container {
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.stats-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  position: relative;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica,  sans-serif;
+}
+.stats-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  background-color: var(--light-brown);
+  border-radius: 3px;
+}
+
+.premium-stats__subtitle {
+  font-size: 1.4rem;
+  color: var(--light-brown-text);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+.stat-card:hover::after {
+  transform: translateX(0);
+}
+.stat-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e67e22, var(--brown-text));
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--orange-brown);
+  margin-bottom: 1rem;
+  font-family: "Arial", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+  color: var(--brown-text);
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: var(--gray);
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    padding: 3rem 1.5rem;
+  }
+  .stats-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .stat-card {
+    padding: 2rem 1rem;
+  }
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}
+.responsive-table-container {
+  overflow-x: auto;
+  margin: 25px 0;
+}
+
+.feature-table {
+  width: 83%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 2px solid var(--dark-brown);
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-table thead th {
+  border: 2px solid var(--dark-brown);
+  padding: 12px;
+  text-align: left;
+  color: white;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: bold;
+  background-color: var(--secondary-color);
+}
+
+.feature-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.feature-table tbody td {
+  border: 2px solid var(--dark-brown);
+  padding: 10px 12px;
+  font-size: clamp(13px, 1.8vw, 15px);
+  transition: all 0.3s ease;
+}
+
+.feature-key {
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--orange-brown);
+}
+
+.feature-value {
+  background-color: white;
+  color: var(--dark-brown);
+}
+
+/* Hover effects */
+.feature-table tbody tr:hover .feature-key {
+  color: var(--very-dark-brown);
+  background-color: var(--light-brown);
+}
+
+.feature-table tbody tr:hover .feature-value {
+  background-color: var(--orange-brown);
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .feature-table {
+    min-width: 100%;
+  }
+  .feature-table thead th,
+  .feature-table tbody td {
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .feature-table thead th,
+  .feature-table tbody td {
+    padding: 6px 8px;
+    font-size: clamp(12px, 3.5vw, 14px);
+  }
+}
+/* Color Scheme */
+.u-light-brown {
+  color: var(--secondary-color);
+}
+
+.u-dark-brown {
+  color: var(--orange-brown);
+}
+
+/* Section Styling */
+.u-section-1 {
+  padding: 40px 0;
+}
+
+.u-sheet-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Headline Styling */
+.u-heading-wrapper {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.u-subtitle {
+  color: var(--medium-brown);
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.u-custom-headline {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: var(--dark-gray);
+}
+
+.u-tagline {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--medium-gray);
+  display: block;
+  margin-top: 1rem;
+}
+
+.u-description {
+  color: var(--gray);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+/* Gallery Styling */
+.u-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.u-gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1/1;
+}
+
+.u-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.u-gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(94, 58, 33, 0.8);
+  color: white;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.u-gallery-item:hover .u-gallery-overlay {
+  transform: translateY(0);
+}
+
+.u-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.u-gallery-overlay h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin-bottom: 5px;
+}
+
+.u-gallery-overlay p {
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+}
+
+/* Button Styling */
+.u-align-center {
+  text-align: center;
+}
+
+.u-cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, var(--medium-brown), var(--dark-brown));
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  border: none;
+  cursor: pointer;
+}
+
+.u-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(94, 58, 33, 0.3);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .u-section-1 {
+    padding: 30px 0;
+  }
+  .u-gallery-container {
+    gap: 15px;
+  }
+  .u-gallery-item {
+    aspect-ratio: 1/1.2;
+  }
+}
+@media (max-width: 480px) {
+  .u-section-1 {
+    padding: 20px 0;
+  }
+  .u-subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .u-gallery-container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 30px auto;
+  }
+  .u-cta-button {
+    width: 90%;
+    max-width: 300px;
+    padding: 12px 20px;
+  }
+}
+.u-gallery-item:hover {
+  box-shadow: 0px 2px 10px 0px var(--shadow-color);
+}
+
+.policy-section {
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.policy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.policy-main-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.policy-subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #6d6d6d;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.policy-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .policy-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.policy-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 0;
+  position: relative;
+}
+.policy-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(207, 132, 85, 0.2);
+}
+@media (min-width: 768px) {
+  .policy-item {
+    padding: 0 2rem;
+    border-right: 1px solid rgba(207, 132, 85, 0.2);
+  }
+  .policy-item:not(:last-child)::after {
+    display: none;
+  }
+  .policy-item:last-child {
+    border-right: none;
+  }
+}
+
+.policy-icon {
+  width: 58px;
+  height: 58px;
+  background-image: url("https://i.postimg.cc/HxymTd42/policies-icon.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.policy-icon svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.policy-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: var(--orange-brown);
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.policy-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--orange-brown);
+}
+
+.policy-content {
+  color: #6d6d6d;
+  line-height: 1.7;
+  font-size: 1.4rem;
+}
+
+.policy-highlights {
+  margin-top: 1.5rem;
+}
+.policy-highlights li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  list-style-type: none;
+  padding-left: 1.8rem;
+  color: #6d6d6d;
+}
+.policy-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--orange-brown);
+  font-weight: bold;
+}
+
+.brands__container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-7000px);
+  }
+}
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 70s linear infinite;
+  display: flex;
+  width: 8250px;
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.quality {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+.quality__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.quality__heading {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 700;
+  position: relative;
+  line-height: 1.3;
+}
+.quality__heading::after {
+  content: "";
+  display: block;
+  width: clamp(60px, 15vw, 80px);
+  height: 3px;
+  background: var(--orange-brown);
+  margin: 15px auto 0;
+}
+.quality__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .quality__content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .quality__content-wrapper {
+    gap: 20px;
+  }
+}
+.quality__slider-container {
+  flex: 0 0 45%;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+  transform: translateY(30px);
+}
+@media (max-width: 768px) {
+  .quality__slider-container {
+    flex: 1 1 100%;
+    order: -1;
+    max-width: 100%;
+  }
+}
+.quality__content {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 20px;
+  padding-right: 5rem;
+}
+@media (max-width: 768px) {
+  .quality__content {
+    padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .quality__content {
+    width: 100%;
+    min-width: auto;
+    padding: 0 10px;
+  }
+}
+.quality__block {
+  margin-bottom: 35px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.quality__block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.quality__block:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 400px) {
+  .quality__block {
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+}
+.quality__title {
+  color: var(--orange-brown);
+  font-size: clamp(18px, 2.5vw, 24px);
+  margin-bottom: 15px;
+  line-height: 1.3;
+  position: relative;
+  padding-bottom: 10px;
+}
+.quality__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: rgba(207, 132, 85, 0.5);
+}
+.quality__text {
+  color: var(--dark-gray);
+  line-height: 1.7;
+  text-align: justify;
+  font-size: 1.35rem;
+  word-break: break-word;
+}
+@media (max-width: 400px) {
+  .quality__text {
+    font-size: 0.95rem;
+  }
+}
+
+.slider2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 0 auto;
+  touch-action: pan-y;
+}
+.slider2__wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  height: clamp(150px, 35vw, 350px);
+}
+.slider2__img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+}
+.slider2__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(207, 132, 85, 0.8);
+  color: white;
+  border: none;
+  width: clamp(24px, 6vw, 40px);
+  height: clamp(24px, 6vw, 40px);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: clamp(12px, 3vw, 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 10;
+  opacity: 0.9;
+  user-select: none;
+}
+.slider2__btn:hover {
+  background: var(--orange-brown);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+.slider2__btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+.slider2__btn--prev {
+  left: clamp(5px, 2vw, 15px);
+}
+.slider2__btn--next {
+  right: clamp(5px, 2vw, 15px);
+}
+.slider2__indicators {
+  display: flex;
+  justify-content: center;
+  gap: clamp(6px, 1.5vw, 10px);
+  margin-top: clamp(10px, 3vw, 20px);
+  padding: 5px;
+}
+.slider2__indicator {
+  width: clamp(6px, 2vw, 12px);
+  height: clamp(6px, 2vw, 12px);
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.slider2__indicator:hover {
+  background: rgb(229.4587155963, 189.5504587156, 164.5412844037);
+}
+.slider2__indicator--active {
+  background: var(--orange-brown);
+  transform: scale(1.2);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 400px) {
+  .slider2 {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slider2__wrapper {
+    height: 220px;
+  }
+}
+
+.ba__container {
+  position: relative;
+  min-height: 50vh;
+  text-align: left;
+}
+
+.slider3 {
+  width: 100vw;
+  height: 60vh;
+}
+
+.slide3 {
+  margin-top: -6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  position: absolute;
+  width: 100%;
+}
+.slide3.active {
+  display: flex;
+}
+.slide3.active .slide3__image {
+  transform: translate(0);
+  opacity: 1;
+  filter: blur(0) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+}
+
+.slide3__bg {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.slide3__images {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 365px;
+  margin: 0 20px;
+}
+
+.slide3__image {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+  filter: blur(10px) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+  will-change: transform, opacity, filter;
+}
+.slide3__image svg {
+  display: block;
+}
+.slide3__image--left {
+  transform: translate(0.75%, -10px);
+}
+.slide3__image--right {
+  top: 5vmin;
+  transform: translate(-0.75%, 10px);
+}
+
+.slider3__pagination {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.button3 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid var(--white);
+  line-height: 1;
+  font: 600 12px "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  transition: all 0.25s ease;
+  appearance: none;
+}
+.button3:hover {
+  color: #333;
+  background-color: white;
+}
+
+.ba-title {
+  text-align: center;
+  width: 100%;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.ba__subtitle {
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+  color: var(--light-brown-text);
+  /* max-width: 600px; */
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+/* Base Styles */
+.about-section {
+  padding: 80px 0;
+  background-color: var(--white);
+  font-family: "Arial", sans-serif;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Content Layout */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Typography */
+.about-title {
+  font-size: 5rem;
+  color: var(--secondary-color);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: var(--orange-brown);
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.about-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--medium-gray);
+  margin-bottom: 1rem;
+}
+
+/* Image Styling */
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.02);
+}
+
+/* Description Section */
+.about-description {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-subtitle {
+    font-size: 1.4rem;
+  }
+  .about-image {
+    order: -1;
+  }
+  .about-text, .about-image {
+    min-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-subtitle {
+    font-size: 1.2rem;
+  }
+  .about-paragraph {
+    font-size: 1rem;
+  }
+}
+.seat-cover-cta {
+  max-width: 58%;
+}
+
+@media (max-width: 768px) {
+  .seat-cover-cta {
+    max-width: 95%;
+  }
+}
+
+
+/* CTA Section Styles */
+.seat-cover-cta {
+    font-family: Arial, sans-serif;
+    margin: 2rem auto 4rem;
+    /* border: 2px solid var(--dark-orange); */
+    padding: 20px;
+    border-radius: 10px;
+    background: #CF8455;
+    background: 
+    linear-gradient(
+      145deg,
+      #f5f0e8 0%,
+      #e8d9c5 25%,
+      #d8c5a7 50%,
+      #c19a6b 100%
+    );
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 13px 10px 15px 1px;
+    max-width: 58%;
+  }
+  
+  .seat-cover-cta h2 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin: 0 0 2rem 0;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+  }
+  
+  .seat-cover-cta ul {
+    text-align: left;
+    padding-left: 20px;
+    color: var(--dark-brown);
+    font-size: 16px;
+    line-height: 1.6;
+    list-style-type: none;
+  }
+  
+  .seat-cover-cta li {
+    margin-bottom: 10px;
+  }
+  
+  .checkmark {
+    background-color: var(--dark-orange);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .cta-buttons {
+    margin: 25px 0;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px;
+    border: 2px solid var(--very-dark-brown);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  
+  
+  .btn-secondary {
+    display: inline-block;
+    background-color: var(--light-brown);
+    color: var(--dark-brown);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px;
+    border: 2px solid var(--dark-orange);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-primary:focus,
+  .btn-secondary:focus,
+  .btn-primary:active,
+  .btn-secondary:active {
+    transform: translateY(-2px);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+    color: white;
+  }
+  
+  .disclaimer {
+    font-size: 14px;
+    color: var(--dark-brown);
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .seat-cover-cta {
+      max-width: 95%;
+      padding: 15px;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .btn-primary, 
+    .btn-secondary {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+/*# sourceMappingURL=main.css.map */
+    </style>
+    <!-- !Header ------------------------------------------------------------------------------------>
+    <header class="header__container" id="header">
+      <div class="header__flag">
+        <img class="header__flag--img" src="https://i.postimg.cc/bNkYHNQj/flag2.png" alt="flag" />
+      </div>
+    
+      <nav class="header__items">
+        <a href="#contact"><p>About Us</p></a>
+        <a href="#table"><p>Item Specifics</p></a>
+        <a href="#policy"><p>Policies</p></a>
+        <a href="#ebay-faq"><p>FAQ</p></a>
+        <!-- <a href="#contact"><p>Contact Us</p></a> -->
+      </nav>
+    
+      <div class="header__logo">
+        <a href="#"><img class="header__logo--img" src="https://i.postimg.cc/QNWjhxYW/Logo.png" alt="logo" /></a>
+      </div>
+    
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+     
+    <!-- !/Header ------------------------------------------------------------------------------------>
+    <!-- *title and image gallery --------------------------------------------------------------------------------------->
+    <section id="gallery" class="u-align-center u-clearfix u-container-align-center u-section-1" id="premium-seat-covers">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+          
+          <!-- Professional Headline -->
+          <div class="u-heading-wrapper">
+              <!-- <span class="u-subtitle">PREMIUM CAR ACCESSORIES</span> -->
+              <h2 class="u-custom-headline">
+                  <span class="u-light-brown">US Auto Nation </span> 
+                  <span class="u-dark-brown">Where Precision Meets Originality</span>
+                  <span class="u-tagline">Transform your vehicle’s worn interior into a factory-fresh experience with our premium, precision-fit replacement covers. </span>
+              </h2>
+          </div>
+          
+          
+          <!-- Interactive Gallery -->
+          <div class="u-gallery-container">
+              <div class="u-gallery-item">
+                  <img src="https://i.postimg.cc/Jhy2ZtkN/title-3.jpg" alt="Light Brown Seat Cover">
+                  <div class="u-gallery-overlay">
+                      <h3>Premium Materials</h3>
+                      <p>Not just stylish but built to last</p>
+                  </div>
+              </div>
+              
+              <div class="u-gallery-item">
+                  <img src="https://i.postimg.cc/YSJy3k6J/title-2.jpg" alt="Dark Brown Seat Cover">
+                  <div class="u-gallery-overlay">
+                      <h3>The Art of Handcrafting</h3>
+                      <p>The blend of modern technology with craftsmanship</p>
+                  </div>
+              </div>
+              
+              <div class="u-gallery-item">
+                  <img src="https://i.postimg.cc/zGGMDxDP/title-1.jpg" alt="Installed Seat Cover">
+                  <div class="u-gallery-overlay">
+                      <h3>Precision</h3>
+                      <p>Custom-tailored to your vehicle's exact original specifications</p>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Call to Action -->
+          <!-- <div class="u-align-center">
+              <a href="#shop-now" class="u-cta-button">SHOP THE COLLECTION →</a>
+          </div> -->
+      </div>
+  </section>
+    <!-- */title and image gallery--------------------------------------------------------------------------------------->
+    
+    <!-- *product title and images --------------------------------------------------------------------------------------->
+     <section id="product" class="product-img__container">
+      <div style="text-align: center; ">
+        <h3 style="font-size:0.9rem;">
+          <b>{title}</b>
+       </h3>
+     </div>
+      {product-gallery-layout-right-product-gallery}
+     </section>
+    <!-- */product images --------------------------------------------------------------------------------------->
+    <!-- *specifics --------------------------------------------------------------------------------------->
+    <div id="table" class="responsive-table-container">
+      <table class="feature-table">
+          <thead>
+              <tr>
+                  <th>FEATURE</th>
+                  <th>DETAILS</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="feature-key">Make & Model</td>
+                  <td class="feature-value">Chrysler Town & Country</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Submodel</td>
+                  <td class="feature-value">Base, L, Limited, Touring, Premium, Sport, Platinum, Mini, Li, S</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Years Fitted</td>
+                  <td class="feature-value">2008-2016 (All Years)</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Placement</td>
+                  <td class="feature-value">Front Passenger Bottom</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Material</td>
+                  <td class="feature-value">Synthetic Leather</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Color</td>
+                  <td class="feature-value">Black - Original Factory Color</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Trim Code</td>
+                  <td class="feature-value">MLX1 or TLX1 - Located on Door Jamb/Glove Compartment</td>
+              </tr>
+              <tr>
+                  <td class="feature-key">Compatibility</td>
+                  <td class="feature-value">Fits Heated & Non-Heated Seats<br>Fits Power & Manual Seats</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+    <!-- */specifics --------------------------------------------------------------------------------------->
+    <!-- *statics --------------------------------------------------------------------------------------->
+    <section id="statics" class="stats-container">
+      <div class="stats-title">Our Story in Numbers</div>
+      <p class="premium-stats__subtitle">Every number tells a story of quality craftsmanship and customer satisfaction</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="50000" data-format="short">0</div>
+          <div class="stat-label">Covers Sold Nationwide</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="1200" data-format="short">0</div>
+          <div class="stat-label">Premium Products Available</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="20" data-format="plain">0</div>
+          <div class="stat-label">Years of Quality and Trust</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="150000" data-format="short">0</div>
+          <div class="stat-label">Satisfied Followers & Customers</div>
+        </div>
+      </div>
+    </section>
+    <!-- */statics --------------------------------------------------------------------------------------->
+    <!-- *before/after --------------------------------------------------------------------------------------->
+     <section id="ba" class="ba__container">
+      <div class="ba-title">The Power of a Perfect Fit</div>
+      <p class="ba__subtitle">Crafted for a precise fit and long-term durability, our tailored premium seat covers enhance worn interiors with a cleaner, more refined appearance.</p>
+        <div class="slider3">
+          <svg class="slider3__mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" width="0" height="0">
+            <defs>
+              <!-- Slide 1 -->
+              <pattern id="pattern1l" patternUnits="userSpaceOnUse" width="562" height="366" viewBox="0 0 562 366">
+                <image xlink:href="https://i.postimg.cc/FRTNzY5j/before-1.jpg" width="600px" height="600px"/>
+              </pattern>
+              <pattern id="pattern1r" patternUnits="userSpaceOnUse" x="365px" width="562" height="366" viewBox="0 0 562 366">
+                <image xlink:href="https://i.postimg.cc/jS6VCDyL/after-1.jpg" width="600px" height="600px"/>
+              </pattern>
+              
+              <!-- Slide 2 -->
+              <pattern id="pattern2l" patternUnits="userSpaceOnUse" width="562" height="366" viewBox="0 0 562 366">
+                <image xlink:href="https://i.postimg.cc/T1SxjBP1/before-2.jpg" width="600px" height="600px"/>
+              </pattern>
+              <pattern id="pattern2r" patternUnits="userSpaceOnUse" x="365" width="562" height="366" viewBox="0 0 562 366">
+                <image xlink:href="https://i.postimg.cc/yYMBDq5r/after-2.jpg" width="600px" height="600px"/>
+              </pattern>
+            </defs>
+          </svg>
+    
+          <div class="slide3" id="slide3-1">
+            <svg class="slide3__bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920" height="1080">
+              <rect x="0" y="0" width="1920" height="1080" fill="url(#bg1)" />
+            </svg>
+            <div class="slide3__images">
+              <div class="slide3__image slide3__image--left">
+                <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+                  <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern1l)"/>
+                </svg>
+              </div>
+    
+              <div class="slide3__image slide3__image--right">
+                <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+                  <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern1r)"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+    
+          <div class="slide3" id="slide3-2">
+            <svg class="slide3__bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920" height="1080">
+              <rect x="0" y="0" width="1920" height="1080" fill="url(#bg2)" />
+            </svg>
+            <div class="slide3__images">
+              <div class="slide3__image slide3__image--left">
+                <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+                  <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern2l)"/>
+                </svg>
+              </div>
+    
+              <div class="slide3__image slide3__image--right">
+                <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+                  <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern2r)"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+    
+        <div class="slider3__pagination">
+          <a href="#" class="button3">Slide 1</a>
+          <a href="#" class="button3">Slide 2</a>
+        </div>
+     </section>
+<script>
+  // Force redirect to first slide
+window.location.href="#slide-1";
+
+// All images are from https://unsplash.com/
+</script>
+    <!-- */before/after --------------------------------------------------------------------------------------->
+    <!-- *certificates --------------------------------------------------------------------------------------->
+    <section id="certificates" class="quality">
+        <div class="quality__container">
+            <!-- Section Heading -->
+            <h2 class="quality__heading">Premium Materials & Craftsmanship</h2>
+            
+            <div class="quality__content-wrapper">
+                <!-- Left: Slider -->
+                <div class="quality__slider-container">
+                    <div class="slider2">
+                        <div class="slider2__wrapper">
+                            <img src="https://i.postimg.cc/qv1P29ZT/material-1.jpg" alt="High-quality seat cover material" class="slider2__img">
+                            <img src="https://i.postimg.cc/hP1WtJLh/material-2.jpg" alt="Durable seat cover fabric" class="slider2__img">
+                            <img src="https://i.postimg.cc/mr5GW0Qw/material-3.jpg" alt="Premium stitching details" class="slider2__img">
+                        </div>
+                        
+                        <!-- Slider Controls -->
+                        <button class="slider2__btn slider2__btn--prev">&lt;</button>
+                        <button class="slider2__btn slider2__btn--next">&gt;</button>
+                    </div>
+                    
+                    <!-- Slider Indicators -->
+                    <div class="slider2__indicators">
+                        <span class="slider2__indicator slider2__indicator--active"></span>
+                        <span class="slider2__indicator"></span>
+                        <span class="slider2__indicator"></span>
+                    </div>
+                </div>
+            
+                <!-- Right: Content -->
+                <div class="quality__content">
+                    <div class="quality__block">
+                        <h3 class="quality__title">Your Satisfaction, Our Priority</h3>
+                        <p class="quality__text">
+                            We're committed to delivering quality craftsmanship and exceptional customer service. 
+                            From custom-made seat covers to worldwide shipping, every order is handled with care and precision. 
+                            Your satisfaction is 100% guaranteed — and we're here to make sure of it.
+                        </p>
+                    </div>
+            
+                    <div class="quality__block">
+                        <h3 class="quality__title">Driven by Quality, Backed by Passion</h3>
+                        <p class="quality__text">
+                            We don't just sell products — we craft solutions tailored to your needs. 
+                            Every item is made to OEM standards in our Houston facility, ensuring top-tier materials and flawless fit. 
+                            Expect nothing less than excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *certificates --------------------------------------------------------------------------------------->
+    <!-- *policy --------------------------------------------------------------------------------------->
+    <section id="policy" class="policy-section">
+      <div class="policy-container">
+        <h2 class="policy-main-title">Our Policies</h2>
+        <p class="policy-subtitle">Clear guidelines for your peace of mind</p>
+        
+        <div class="policy-grid">
+          <article class="policy-item">
+            <div class="policy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor">
+                <path d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"/>
+              </svg>
+            </div>
+            <h3 class="policy-title">Shipping</h3>
+            <div class="policy-content">
+              <p>Every seat cover we sell is made to order at our Houston, Texas, facility with OEM standards. </p>
+              <ul class="policy-highlights">
+                <li>3-4 business day production</li>
+                <li>Free U.S. shipping</li>
+                <li>Worldwide delivery available</li>
+                <li>Full tracking provided</li>
+              </ul>
+            </div>
+          </article>
+  
+          <article class="policy-item">
+            <div class="policy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 6h-3V3c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM8 3h8v3H8V3zm4 16c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                <path d="M12.5 11.5h-1v2.71l1.64 1.64.71-.71-1.35-1.35z"/>
+              </svg>
+            </div>
+            <h3 class="policy-title">Returns</h3>
+            <div class="policy-content">
+              <p>We want you to be completely satisfied with your purchase.</p>
+              <ul class="policy-highlights">
+                <li>30-day return policy</li>
+                <li>Free return shipping in U.S.</li>
+                <li>International returns via eBay</li>
+                <li>Unused items in original packaging</li>
+              </ul>
+            </div>
+          </article>
+  
+          <article class="policy-item">
+            <div class="policy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+              </svg>
+            </div>
+            <h3 class="policy-title">Warranty</h3>
+            <div class="policy-content">
+              <p>We stand behind the quality of our products with confidence.</p>
+              <ul class="policy-highlights">
+                <li>1-year manufacturer warranty</li>
+                <li>Covers materials and workmanship</li>
+                <li>Simple claims process</li>
+                <li>Quick replacement service</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>  
+    <!-- */policy --------------------------------------------------------------------------------------->
+    <!-- *FAQ --------------------------------------------------------------------------------------->
+    <section class="ebay-faq-section" id="ebay-faq">
+      <div class="ebay-faq-container">
+          <h2 class="faq-main-title">Frequently Asked Questions</h2>
+          <p class="faq-intro">Below you'll find answers to the most common questions we receive from our eBay customers.</p>
+          
+          <div class="ebay-faq-accordion">
+              <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                      <span class="question-text">Will these seat covers fit my specific vehicle?</span>
+                      <span class="accordion-icon"></span>
+                  </button>
+                  <div class="faq-answer" id="faq-answer-1" aria-labelledby="faq-question-1">
+                      <div class="answer-content">
+                          <p>Yes — just send us photos of your seats and your VIN sticker. We’ll tailor your covers to match your vehicle’s exact specifications.</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                      <span class="question-text">How well do they match factory originals?</span>
+                      <span class="accordion-icon"></span>
+                  </button>
+                  <div class="faq-answer" id="faq-answer-2" aria-labelledby="faq-question-2">
+                      <div class="answer-content">
+                          <p>Our covers accommodate all original features and are airbag-compatible. We strongly recommend professional installation for safety.
+                            Our covers match OEM fit, color, stitching, and perforation patterns using top-grade materials from the same suppliers trusted by major carmakers, no painting or dyeing involved.
+                            </p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                      <span class="question-text">Can I upgrade or customize my seat covers?</span>
+                      <span class="accordion-icon"></span>
+                  </button>
+                  <div class="faq-answer" id="faq-answer-3" aria-labelledby="faq-question-3">
+                      <div class="answer-content">
+                          <p>Yes! You can upgrade to genuine leather if your original seats are not. We also offer select customization options for color and material. Custom orders are final sale and non-returnable, so we'll work closely with you to ensure accuracy.</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                      <span class="question-text">Do they include foam or frames, and can I install them myself?</span>
+                      <span class="accordion-icon"></span>
+                  </button>
+                  <div class="faq-answer" id="faq-answer-4" aria-labelledby="faq-question-4">
+                      <div class="answer-content">
+                          <p>Our products are replacement seat covers only, but we do sell foam cushions and frames separately.
+                            We recommend professional installation, especially if airbags or heating elements are involved although it’s possible to successfully install the covers yourself.
+                            </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                    <span class="question-text">What should I do if the clip is stitched backward or something doesn't align?</span>
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-5" aria-labelledby="faq-question-5">
+                    <div class="answer-content">
+                        <p>If a clip appears backward, it likely needs to be folded or rotated inward 180° to attach properly. This is a common part of the installation process.
+                          </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                  <span class="question-text">Why aren't pre-cut holes for headrests, seat belts, or power seat controls?</span>
+                  <span class="accordion-icon"></span>
+              </button>
+              <div class="faq-answer" id="faq-answer-6" aria-labelledby="faq-question-6">
+                  <div class="answer-content">
+                      <p>Because seat designs can vary, we leave these access points uncut to ensure a precise fit. During installation, your installer will cut openings exactly where needed for a clean, professional finish..
+                        </p>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- */FAQ --------------------------------------------------------------------------------------->
+    <!-- *suggestion --------------------------------------------------------------------------------------->
+     <section id="suggestion" class="suggestion__container">
+
+      {suggested-items-columns[3]-max[9]-store-categories}
+     </section>
+    <!-- */suggestion --------------------------------------------------------------------------------------->
+    <!-- *brands --------------------------------------------------------------------------------------->
+     <section class="brands__container">
+      
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="https://i.postimg.cc/k5cdY25k/CHEVROLET.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/k570S7yw/FORD.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/v85C01SX/TOYOTA.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/jqkRrnhT/BMW.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/L8mStk9z/MERCEDES-BENZ.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/rsdXpg9k/DODGE.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/PJv9HJtf/HONDA.jpg" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/FHx98WWW/JAGUAR.jpg" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/3Rz7mPNR/LEXUS.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/1zPQKGyG/CADILLAC.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/VNLY8q2Y/Jeep.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/rpC86hfZ/ACURA.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/qMh4BBm3/BUICK.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/RFSvvc8S/AUDI.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/Bn7zj2XZ/VOLVO.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/28wMfsYZ/VOLKSWAGEN.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/HLKFhbgv/SUZUKI.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/N0LWDpWr/SAAB.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/MXk4pwT7/HUMMER.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/DfWw0c00/INFINITI.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/nr7xk091/LINCOLN.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/SNhb4Lzw/PONTIAC.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/Hn1RpHjQ/TESLA.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/3xrM4K11/PORSCHE.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/s263DBR5/LAND-ROVER.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/SsMHFjQS/SUBARU.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/tTT8rDwx/GMC.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/PxVnh0Yy/CHRYSLER.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/D0qVs0Rj/NISSAN.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/C1RSZFFX/KIA.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/VLq10Z8f/MAZDA.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/mrDGqbFk/MERCURY.webp" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://i.postimg.cc/DftyXb4g/ISUZU.jpg" height="100" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- */brands --------------------------------------------------------------------------------------->
+    <!-- *contact --------------------------------------------------------------------------------------->
+    <section id="contact" class="about-section">
+      <div class="about-container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-title">About Us</h2>
+            <h3 class="about-subtitle">
+              Our mission is simple: to deliver seat covers that perfectly match your vehicle's original interior, bringing back comfort, style, and value without the high price tag of dealership replacements.
+            </h3>
+          </div>
+          <div class="about-image">
+            <img src="https://i.postimg.cc/k4n04ghN/factory.jpg" alt="Our factory" class="about-img">
+          </div>
+        </div>
+        <div class="about-description">
+          <p class="about-paragraph">
+            We take pride in being a known and respected leader in the auto upholstery industry. For over a decade, we've dedicated ourselves to producing top-quality, factory-match replacement seat covers that combine craftsmanship, precision, and durability.
+          </p>
+          <p class="about-paragraph">
+            Based in the heart of Houston, Texas, every seat cover we produce is with top-quality materials that we proudly source domestically. By keeping everything here, from sourcing to production to shipping, we ensure faster delivery times for our customers.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- */contact --------------------------------------------------------------------------------------->
+    <!-- *cta --------------------------------------------------------------------------------------->
+    <div id="cta" class="seat-cover-cta">
+        <h2>🚀 Premium Seat Covers Await!</h2>
+        <ul>
+          <li><span class="checkmark">✓</span> <strong>Luxury Fit</strong> – Custom-tailored for your car model</li>
+          <li><span class="checkmark">✓</span> <strong>All-Weather Durability</strong> – Spills, pets, and wear-resistant</li>
+          <li><span class="checkmark">✓</span> <strong>Limited Inventory</strong> – Order today for fast shipping</li>
+        </ul>
+        <div class="cta-buttons">
+          <a href="#BuyItNow" class="btn-primary">🛒 Buy This Item Now</a>
+          <a href="https://www.ebay.com/str/usautonation?_tab=feedback" class="btn-secondary">💬 Feedbacks</a>
+        </div>
+        <p class="disclaimer">📞 Contact us directly or Visit our website for more detailed product information and support.
+          Your satisfaction is our priority - let us help you find the perfect fit for your vehicle!</p>
+      </div>
+    <!-- */cta --------------------------------------------------------------------------------------->
+    <!-- !footer ------------------------------------------------------------------------------------>
+     <footer class="footer__container">
+        <div class="copyright">&copy; 2025 Auto Nation Seat Factory. All rights reserved.</div>
+     </footer>
+    <!-- !/footer ------------------------------------------------------------------------------------>
+
+
+
+
+    <script>
+        // faq part
+
+document.addEventListener('DOMContentLoaded', function() {
+    const questions = document.querySelectorAll('.faq-question');
+    
+    questions.forEach(question => {
+        const answer = document.getElementById(question.getAttribute('aria-controls'));
+        
+        question.addEventListener('click', function() {
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle current question
+            question.setAttribute('aria-expanded', !isExpanded);
+            answer.setAttribute('aria-expanded', !isExpanded);
+        });
+    });
+  });
+  
+  // statics scripts
+  class CounterAnimation {
+    constructor() {
+      this.counters = document.querySelectorAll('.stat-number');
+      this.animationStarted = false;
+      this.observerOptions = {
+        threshold: 0.3
+      };
+      this.init();
+    }
+  
+    init() {
+      if (this.counters.length === 0) return;
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !this.animationStarted) {
+            this.animationStarted = true;
+            this.animateAllCounters();
+          }
+        });
+      }, this.observerOptions);
+  
+      const statsSection = document.querySelector('.stats-container');
+      if (statsSection) observer.observe(statsSection);
+    }
+  
+    formatNumber(num, format) {
+      if (format === 'short') {
+        if (num >= 1_000_000) return `${(num / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
+        if (num >= 1_000) return `${(num / 1_000).toFixed(1).replace(/\.0$/, '')}K`;
+      }
+      return num.toString();
+    }
+  
+    animateCounter(element, target, format) {
+      const duration = 1800;
+      const startTime = performance.now();
+      const startValue = 0;
+      const easeOutQuad = t => t * (2 - t);
+  
+      const updateCounter = (timestamp) => {
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easedProgress = easeOutQuad(progress);
+        const currentValue = Math.floor(startValue + (target - startValue) * easedProgress);
+        
+        element.textContent = format === 'plain' 
+          ? this.formatNumber(currentValue, format)
+          : `+${this.formatNumber(currentValue, format)}`;
+  
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          // Final update with exact target value
+          element.textContent = format === 'plain'
+            ? this.formatNumber(target, format)
+            : `+${this.formatNumber(target, format)}`;
+        }
+      };
+  
+      requestAnimationFrame(updateCounter);
+    }
+  
+    animateAllCounters() {
+      this.counters.forEach(counter => {
+        const target = parseInt(counter.dataset.target, 10);
+        const format = counter.dataset.format || 'plain';
+        this.animateCounter(counter, target, format);
+      });
+    }
+  }
+  
+  // Initialize when DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    new CounterAnimation();
+  });
+  
+  
+  
+  
+  
+  
+  // certification part
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const slider2Wrapper = document.querySelector('.slider2__wrapper');
+    const slider2Images = document.querySelectorAll('.slider2__img');
+    const prevBtn = document.querySelector('.slider2__btn--prev');
+    const nextBtn = document.querySelector('.slider2__btn--next');
+    const indicators = document.querySelectorAll('.slider2__indicator');
+    
+    let currentIndex = 0;
+    const totalSlides2 = slider2Images.length;
+    
+    function updateSlider2() {
+        slider2Wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            if (index === currentIndex) {
+                indicator.classList.add('slider2__indicator--active');
+            } else {
+                indicator.classList.remove('slider2__indicator--active');
+            }
+        });
+    }
+    
+    // Next slide
+    nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % totalSlides2;
+        updateSlider2();
+    });
+    
+    // Previous slide
+    prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + totalSlides2) % totalSlides2;
+        updateSlider2();
+    });
+    
+    // Indicator clicks
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', function() {
+            currentIndex = index;
+            updateSlider2();
+        });
+    });
+    
+    // Auto-rotate slides (optional)
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides2;
+        updateSlider2();
+    }, 3000);
+  }); 
+  
+    //BA Section
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.slide3').forEach(slide => slide.classList.remove('active'));
+      document.getElementById('slide3-1')?.classList.add('active');
+    
+      document.querySelectorAll('.button3').forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          document.querySelectorAll('.slide3').forEach(slide => slide.classList.remove('active'));
+          document.getElementById(`slide3-${index + 1}`)?.classList.add('active');
+        });
+      });
+    });
+    
+   
+  //header part
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.header__items');
+  
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  });
+  
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header__container');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  
+  
+  
+  const header = document.getElementById('header');
+  let lastScroll = 0;
+  const scrollThreshold = 10; 
+  
+  function handleScroll() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScroll > scrollThreshold) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    
+
+    lastScroll = currentScroll;
+  }
+  
+
+  let isTicking = false;
+  window.addEventListener('scroll', () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        handleScroll();
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  });
+  
+  
+  handleScroll();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "OEM Seat Covers",
+        "image": "IMAGE_URL",
+        "description": "High-quality, made-to-order seat covers",
+        "brand": {
+          "@type": "Brand",
+          "name": "Auto Nation Seat Factory"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "YOUR_URL",
+          "priceCurrency": "USD",
+          "price": "PRICE",
+          "availability": "https://schema.org/InStock",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            }
+          }
+        }
+      }
+      </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+      </script>
+
+</body>
+</html>
